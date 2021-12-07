@@ -1,13 +1,29 @@
 package com.techreturners.exercise003;
 
-public class Exercise003 {
+import java.util.ArrayList;
+import java.util.List;
 
+public class Exercise003 {
+	private List<String> iceCream = new ArrayList<>();
+	
+	public Exercise003() {
+		iceCream.add("Pistachio");
+		iceCream.add("Raspberry Ripple");
+		iceCream.add("Vanilla");
+		iceCream.add("Mint Chocolate Chip");
+		iceCream.add("Chocolate");
+		iceCream.add("Mango Sorbet");
+	}
+	
     int getIceCreamCode(String iceCreamFlavour) {
-        throw new UnsupportedOperationException(("You can delete this statement and add your code here."));
+    	int index = iceCream.indexOf(iceCreamFlavour);
+        return index;
     }
 
     String[] iceCreamFlavours() {
-        throw new UnsupportedOperationException(("You can delete this statement and add your code here."));
+    	String[] ic = new String[iceCream.size()];
+    	iceCream.toArray(ic);
+    	return ic;
     }
 
 }
