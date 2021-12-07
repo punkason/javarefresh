@@ -32,8 +32,8 @@ public class Exercise001 {
     public int countLinuxUsers(List<User> users) {
         // Add your code here
     	int count = 0;
-        for(User tmp : users) {
-            if (tmp.getType().equals("Linux")) {
+        for(User usr : users) {
+            if (usr.getType().equals("Linux")) {
             	count++;
             }
         }
