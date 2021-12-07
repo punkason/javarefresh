@@ -1,6 +1,5 @@
 package com.techreturners.exercise004;
 
-import org.junit.Ignore;
 import org.junit.Test;
 
 import java.time.LocalDate;
@@ -37,6 +36,30 @@ public class Exercise004Test {
         Exercise004 ex004 = new Exercise004(LocalDateTime.of(2021, Month.JANUARY, 24, 23, 59, 59, 0));
         LocalDateTime expected = LocalDateTime.of(2052, Month.OCTOBER, 03, 1, 46, 39);
 
+        assertEquals(expected, ex004.getDateTime());
+    }
+    
+    @Test
+    public void checkGetDateTimeStartsAt1900() {
+
+        Exercise004 ex004 = new Exercise004(LocalDateTime.of(1900, Month.JANUARY, 1, 0, 0, 0, 0));
+        LocalDateTime expected = LocalDateTime.of(1931, Month.SEPTEMBER, 10, 1, 46, 40);
+        assertEquals(expected, ex004.getDateTime());
+    }
+    
+    @Test
+    public void checkGetDateTimeChangeTo2000() {
+
+        Exercise004 ex004 = new Exercise004(LocalDateTime.of(1999, Month.DECEMBER, 12, 23, 59, 59, 0));
+        LocalDateTime expected = LocalDateTime.of(2031, Month.AUGUST, 21, 1, 46, 39);
+        assertEquals(expected, ex004.getDateTime());
+    }
+    
+    @Test
+    public void checkGetDateTimeWithFiveDigits() {
+
+        Exercise004 ex004 = new Exercise004(LocalDateTime.of(9999, Month.DECEMBER, 12, 23, 59, 59, 0));
+        LocalDateTime expected = LocalDateTime.of(10031, Month.AUGUST, 21, 1, 46, 39);
         assertEquals(expected, ex004.getDateTime());
     }
 
