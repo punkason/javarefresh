@@ -19,7 +19,6 @@ public class Exercise004Test {
         assertEquals(expected, ex004.getDateTime());
     }
 
-    //@Ignore("You can remove this @ignore annotation to run the test")
     @Test
     public void checkGetDateTimeWhenBothDateAndTimeIsSpecified() {
 
@@ -29,7 +28,6 @@ public class Exercise004Test {
         assertEquals(expected, ex004.getDateTime());
     }
 
-    //@Ignore("You can remove this @ignore annotation to run the test")
     @Test
     public void checkGetDateTimeWhenBothDateAndTimeIsSpecifiedWithDayRollOver() {
 
@@ -38,7 +36,9 @@ public class Exercise004Test {
 
         assertEquals(expected, ex004.getDateTime());
     }
-    
+    /*
+     * Additional Unit Test
+     */
     @Test
     public void checkGetDateTimeStartsAt1900() {
 

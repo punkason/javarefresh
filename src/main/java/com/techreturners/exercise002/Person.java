@@ -6,7 +6,7 @@ public class Person {
     private String city;
     private int age;
 
-    public Person(String firstName, String lastName, String city, int age) {
+    public Person(String firstName, String lastName, String city, int age) {//Constructor
         this.firstName = firstName;
         this.lastName = lastName;
         this.city = city;

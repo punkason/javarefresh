@@ -6,7 +6,7 @@ import java.util.List;
 public class Exercise003 {
 	private List<String> iceCream = new ArrayList<>();
 	
-	public Exercise003() {
+	public Exercise003() {//Constructor
 		iceCream.add("Pistachio");
 		iceCream.add("Raspberry Ripple");
 		iceCream.add("Vanilla");
@@ -16,13 +16,13 @@ public class Exercise003 {
 	}
 	
     int getIceCreamCode(String iceCreamFlavour) {
-    	int index = iceCream.indexOf(iceCreamFlavour);
+    	int index = iceCream.indexOf(iceCreamFlavour); //check the index in the list
         return index;
     }
 
     String[] iceCreamFlavours() {
     	String[] ic = new String[iceCream.size()];
-    	iceCream.toArray(ic);
+    	iceCream.toArray(ic); //convert list to array
     	return ic;
     }
 
