@@ -17,7 +17,7 @@ public class Exercise005 {
     			int a = curChar - 'a';
     			alphabet[a]++;
     			//System.out.println (a + " " + alphabet[a]);
-    		}else { //ignore space
+    		}else { //ignore space + digit + symbols
     			continue;
     		}
     	}
@@ -34,7 +34,4 @@ public class Exercise005 {
         }
         return false;
     }
-    
-
-
 }
