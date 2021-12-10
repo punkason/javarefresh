@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Exercise005 {
 	private int[] alphabet; //count the number of occurrence of each alphabet
-	private int noOfAlphabet = 26; //26 alphabet
+	private final int NOOFALPHABET = 26; //26 alphabet
 	private void checking(String input) { //checking character one by one
     	for(int i = 0; i<input.length();i++) {
     		input = input.toLowerCase(); //accepts both upper and lower cases
@@ -17,16 +17,16 @@ public class Exercise005 {
     }
 	
 	public Exercise005() {//Constructor
-		alphabet = new int[noOfAlphabet];
+		alphabet = new int[NOOFALPHABET];
 		Arrays.fill(alphabet, 0); //set all to 0		
 	}
 
     public boolean isPangram(String input) {
     	checking(input);
-        for(int i = 0; i < noOfAlphabet;i++) {
+        for(int i = 0; i < NOOFALPHABET;i++) {
         	if (alphabet[i] == 0) // any character found 0 will return false
         		return false;
-        	else if(i+1 == noOfAlphabet) //checked z also okay, then result will be true
+        	else if(i+1 == NOOFALPHABET) //checked z also okay, then result will be true
         		return true;
         }
         return false; //if input is empty
