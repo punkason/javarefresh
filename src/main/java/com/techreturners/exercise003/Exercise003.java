@@ -16,8 +16,8 @@ public class Exercise003 {
 	}
 	
     int getIceCreamCode(String iceCreamFlavour) {
-    	int index = iceCream.indexOf(iceCreamFlavour); //check the index in the list
-        return index;
+    	//check the index in the list
+        return iceCream.indexOf(iceCreamFlavour); 
     }
 
     String[] iceCreamFlavours() {

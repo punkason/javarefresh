@@ -4,13 +4,13 @@ import java.util.List;
 
 public class Exercise001 {
     public String capitalizeWord(String word) {
-    	String capitial = word.substring(0, 1).toUpperCase() + word.substring(1); //capitalize the first character only
-        return capitial;
+    	//capitalize the first character only
+        return word.substring(0, 1).toUpperCase() + word.substring(1);
     }
 
     public String generateInitials(String firstName, String lastName) {
-    	String initials = firstName.substring(0, 1).toUpperCase() + "." + lastName.substring(0, 1).toUpperCase(); //Change to Upper Case
-        return initials;
+    	//Change to Upper Case
+        return firstName.substring(0, 1).toUpperCase() + "." + lastName.substring(0, 1).toUpperCase();
     }
 
     public double addVat(double originalPrice, double vatRate) {

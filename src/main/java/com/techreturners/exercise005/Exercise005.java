@@ -29,6 +29,6 @@ public class Exercise005 {
         	else if(i+1 == noOfAlphabet) //checked z also okay, then result will be true
         		return true;
         }
-        return false;
+        return false; //if input is empty
     }
 }
